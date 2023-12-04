@@ -51,13 +51,15 @@ namespace jromres.Servicios
 
         {
             MenuInterfaz mi = new MenuImplementacion();
-            string buscarId = mi.pedirIdElemento();
+            int buscarId = mi.pedirIdElemento();
             CubDtos cubiertoaBorrar = new CubDtos();
             foreach (CubDtos cubierto in listaAntigua)
             {
                 if (cubierto.IdElemento.Equals(buscarId))
                 {
                     cubiertoaBorrar = cubierto;
+                    break;
+                    
                   
                 }
             }
@@ -70,7 +72,7 @@ namespace jromres.Servicios
         public void modificarCantidad(List<CubDtos> listaAntigua)
         {
             MenuInterfaz mi = new MenuImplementacion();
-            string buscarId = mi.pedirIdElemento();
+            int buscarId = mi.pedirIdElemento();
             
             foreach (CubDtos cubierto in listaAntigua)
             {

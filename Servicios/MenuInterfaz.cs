@@ -26,6 +26,6 @@ namespace jromres.Servicios
         /// @author JRT - 4/12/2023
         /// </summary>
         /// <returns> un string con el idElemento</returns>
-        public string pedirIdElemento();
+        public int pedirIdElemento();
     }
 }

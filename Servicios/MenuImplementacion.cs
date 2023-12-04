@@ -26,9 +26,11 @@ namespace jromres.Servicios
             opcionSeleccionada =Console.ReadKey(true).KeyChar-('0');
             return opcionSeleccionada;
         }
-        public string pedirIdElemento()
+        public int pedirIdElemento()
         {
-            string idABuscar = Console.ReadLine();
+            int idABuscar;
+            Console.WriteLine("Introduzca el número id del elemento a borrar");
+            idABuscar=Convert.ToInt32( Console.ReadLine());
             return idABuscar;
         }
     }
