@@ -63,7 +63,10 @@ namespace jromres.Servicios
             }
             listaAntigua.Remove(cubiertoaBorrar);
         }
-
+        /// <summary>
+        /// Se supone que este método tendría que modificar la cantidad pero, NO funciona 
+        /// </summary>
+        /// <param name="listaAntigua"></param>
         public void modificarCantidad(List<CubDtos> listaAntigua)
         {
             MenuInterfaz mi = new MenuImplementacion();
